@@ -2,6 +2,12 @@ package com.mcx.mall.tiny.mbg.model;
 
 import java.io.Serializable;
 
+/**
+ * 功能
+ *
+ * @author mcx
+ * @date 2020/12/1
+ */
 public class PmsBrand implements Serializable {
     private Long id;
 

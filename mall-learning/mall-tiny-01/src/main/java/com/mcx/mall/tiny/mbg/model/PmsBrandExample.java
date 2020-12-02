@@ -3,6 +3,12 @@ package com.mcx.mall.tiny.mbg.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * PmsBrandExample
+ *
+ * @author mcx
+ * @date 2020/12/1
+ */
 public class PmsBrandExample {
     protected String orderByClause;
 
@@ -63,8 +69,8 @@ public class PmsBrandExample {
         distinct = false;
     }
 
-    protected abstract static class GeneratedCriteria {
-        protected List<Criterion> criteria;
+    protected abstract static class GeneratedCriteria {//GeneratedCriteria
+        protected List<Criterion> criteria;//protected
 
         protected GeneratedCriteria() {
             super();

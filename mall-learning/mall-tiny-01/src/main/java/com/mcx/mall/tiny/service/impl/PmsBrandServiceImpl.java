@@ -11,7 +11,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * Created by mcx on 2020/12/1.
+ * PmsBrandServiceImpl
+ *
+ * @author mcx
+ * @date 2020/12/1
  */
 @Service
 public class PmsBrandServiceImpl implements PmsBrandService {
@@ -30,5 +33,26 @@ public class PmsBrandServiceImpl implements PmsBrandService {
         PageHelper.startPage(pageNum , pageSize);
         List<PmsBrand> pmsBrands = pmsBrandMapper.selectByExample(new PmsBrandExample());
         return pmsBrands;
+    }
+
+    @Override
+    public int createBrand(PmsBrand brand) {
+        return pmsBrandMapper.insertSelective(brand);
+    }
+
+    @Override
+    public int updateBrand(Long id, PmsBrand brand) {
+        brand.setId(id);
+        return pmsBrandMapper.updateByPrimaryKeySelective(brand);
+    }
+
+    @Override
+    public int deleteBrand(Long id) {
+        return pmsBrandMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
+    public PmsBrand getBrand(Long id) {
+        return pmsBrandMapper.selectByPrimaryKey(id);
     }
 }
