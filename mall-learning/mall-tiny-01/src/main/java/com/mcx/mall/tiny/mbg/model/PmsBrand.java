@@ -2,12 +2,6 @@ package com.mcx.mall.tiny.mbg.model;
 
 import java.io.Serializable;
 
-/**
- * 功能
- *
- * @author mcx
- * @date 2020/12/1
- */
 public class PmsBrand implements Serializable {
     private Long id;
 
@@ -16,7 +10,7 @@ public class PmsBrand implements Serializable {
     /**
      * 首字母
      *
-     * @mbggenerated
+     * @mbg.generated
      */
     private String firstLetter;
 
@@ -25,7 +19,7 @@ public class PmsBrand implements Serializable {
     /**
      * 是否为品牌制造商：0->不是；1->是
      *
-     * @mbggenerated
+     * @mbg.generated
      */
     private Integer factoryStatus;
 
@@ -34,35 +28,35 @@ public class PmsBrand implements Serializable {
     /**
      * 产品数量
      *
-     * @mbggenerated
+     * @mbg.generated
      */
     private Integer productCount;
 
     /**
      * 产品评论数量
      *
-     * @mbggenerated
+     * @mbg.generated
      */
     private Integer productCommentCount;
 
     /**
      * 品牌logo
      *
-     * @mbggenerated
+     * @mbg.generated
      */
     private String logo;
 
     /**
      * 专区大图
      *
-     * @mbggenerated
+     * @mbg.generated
      */
     private String bigPic;
 
     /**
      * 品牌故事
      *
-     * @mbggenerated
+     * @mbg.generated
      */
     private String brandStory;
 
