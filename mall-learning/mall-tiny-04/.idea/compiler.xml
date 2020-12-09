@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mall-tiny-04" />
         <module name="mall-tiny-02" />
         <module name="mall-tiny-03" />
-        <module name="mall-tiny-04" />
       </profile>
     </annotationProcessing>
   </component>
